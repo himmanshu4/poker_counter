@@ -1,0 +1,37 @@
+{
+  "name": "poker_counter",
+  "version": "1.0.0",
+  "description": "Server to account for poker betting",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "set DEBUG=poker_counter:* && nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.36.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.16",
+    "@types/sequelize": "^4.28.20",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "exec": "ts-node ./src/index.ts",
+    "delay": 1000
+  }
+}
